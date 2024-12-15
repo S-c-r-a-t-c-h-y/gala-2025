@@ -1,14 +1,8 @@
 :root {
-  /* --cream-white: #f7f2e8; */
   --cream-white: #fcf6db;
   --brown: #430804;
   --light-brown: #c2a87d;
-
-  /* --boxes-background: #690c06; */
   --boxes-background: #430804;
-  /* --boxes-background: #272017; */
-  /* --boxes-background: #403426; */
-  /* --boxes-background: #5a4a36; */
 }
 
 .resize {
@@ -19,29 +13,12 @@
 }
 
 .bground {
-  /* background-image: url(https://github.com/pierreschmittbuhl/Gala-2024/blob/main/images/fond_lv_1.png?raw=true); */
   /* background-size: 200%; */
   background-color: var(--cream-white);
-  background-image: url("images/side_motive_left.png"),
-    url("images/side_motive_right.png");
+  background-image: url("https://github.com/S-c-r-a-t-c-h-y/gala-2025/blob/main/images/side_motive_left.png?raw=true"),
+    url("https://github.com/S-c-r-a-t-c-h-y/gala-2025/blob/main/images/side_motive_right.png?raw=true");
   background-position: left, right;
   background-repeat: repeat-y, repeat-y;
-  /* linear-gradient(#fd4c81, 50%, #ef4444); */
-}
-
-@font-face {
-  font-family: "greek-font1";
-  src: url(fonts/Greek-Freak.ttf);
-}
-
-@font-face {
-  font-family: "greek-font2";
-  src: url(fonts/Norse.otf);
-}
-
-body {
-  /* font-family: greek-font2; */
-  /* font-family: "Georgia", serif; */
 }
 
 .espacement {
@@ -67,64 +44,22 @@ body {
 }
 
 .text-primary {
-  /* color: #ff3434; */
   color: var(--cream-white);
-  /* color: var(--cream-white); */
 }
 
 .border-primary {
   border-color: var(--light-brown);
-  /* border-image: url("images/logo_gala_banniere.png") 10;
-  border-image-repeat: repeat-x;
-  border-bottom: 5px; */
 }
 
 li {
-  /* font-size: 14px; */
   margin-left: 40px;
   list-style-type: circle;
 }
 
 .info-box {
-  /* background-color: var(--brown); */
   background-color: var(--boxes-background);
   border-radius: 5px;
 }
-
-/* .info-box {
-  position: relative;
-  background-color: var(--boxes-background);
-  border-top: 20px solid transparent;
-  border-bottom: 20px solid transparent;
-  overflow: hidden;
-  border-radius: 20px;
-}
-
-.info-box::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 20px;
-  background-image: url("https://via.placeholder.com/800x20");
-  background-size: cover;
-  background-repeat: no-repeat;
-  z-index: 1;
-}
-
-.info-box::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 20px;
-  background-image: url("https://via.placeholder.com/800x20");
-  background-size: cover;
-  background-repeat: no-repeat;
-  z-index: 1;
-} */
 
 p {
   overflow: hidden;
@@ -154,7 +89,7 @@ a:active {
 }
 .quiz h3 {
   position: relative;
-  background-color: var(--brown); /* Nombre rep correctes */
+  background-color: var(--light-brown); /* Nombre rep correctes */
   text-align: justify;
   font-weight: bold;
   font-family: sans-serif;
