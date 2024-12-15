@@ -108,20 +108,9 @@ p small a.tweet {
   margin-bottom: 5px;
 }
 
-.output p0,
-.output p1,
-.output p2,
-.output p3,
-.output p4 {
+.outputp1 {
   /* font énoncé question et réponses */
   filter: blur(4px);
-  padding: 10px;
-  line-height: 30px;
-  font-size: 24px;
-  /*rgba(0,0,0,0.6) dc2626*/
-  color: white;
-  border-radius: 15px;
-  margin-bottom: 5px;
 }
 
 .output li {
@@ -145,35 +134,8 @@ li input[type="radio"] {
 
 .next,
 .unblur,
-.unblur0,
-.unblur1,
-.unblur2,
-.unblur3,
-.unblur4 {
+.unblur1 {
   display: inline-block;
-}
-
-.buttonblur {
-  /* Commencer le quiz */
-  padding: 1rem 1rem;
-  border: 0px solid #ff3434;
-  background-color: rgba(253, 76, 129, 0.9);
-  text-align: center;
-  text-transform: uppercase;
-  color: #fff;
-  font-family: sans-serif;
-  font-weight: bold;
-  font-size: 12px;
-  border-radius: 15px;
-  cursor: pointer;
-  -webkit-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
-  transition: all 0.2s linear;
-}
-.buttonblur:hover {
-  /* Bouton pressé */
-  background-color: #fff;
-  color: #fd4c81;
 }
 
 .button {
@@ -234,11 +196,7 @@ li input[type="radio"] {
   background-color: #36de66;
 }
 .unblur,
-.unblur0,
-.unblur1,
-.unblur2,
-.unblur3,
-.unblur4 {
+.unblur1 {
   display: none;
 }
 

@@ -1,3 +1,16 @@
+:root {
+  /* --cream-white: #f7f2e8; */
+  --cream-white: #fcf6db;
+  --brown: #430804;
+  --light-brown: #c2a87d;
+
+  /* --boxes-background: #690c06; */
+  --boxes-background: #430804;
+  /* --boxes-background: #272017; */
+  /* --boxes-background: #403426; */
+  /* --boxes-background: #5a4a36; */
+}
+
 .resize {
   max-width: 3%;
   height: auto;
@@ -6,9 +19,29 @@
 }
 
 .bground {
-  background-image: url(https://github.com/pierreschmittbuhl/Gala-2024/blob/main/images/fond_lv_1.png?raw=true);
-  background-size: 200%;
+  /* background-image: url(https://github.com/pierreschmittbuhl/Gala-2024/blob/main/images/fond_lv_1.png?raw=true); */
+  /* background-size: 200%; */
+  background-color: var(--cream-white);
+  background-image: url("images/side_motive_left.png"),
+    url("images/side_motive_right.png");
+  background-position: left, right;
+  background-repeat: repeat-y, repeat-y;
   /* linear-gradient(#fd4c81, 50%, #ef4444); */
+}
+
+@font-face {
+  font-family: "greek-font1";
+  src: url(fonts/Greek-Freak.ttf);
+}
+
+@font-face {
+  font-family: "greek-font2";
+  src: url(fonts/Norse.otf);
+}
+
+body {
+  /* font-family: greek-font2; */
+  /* font-family: "Georgia", serif; */
 }
 
 .espacement {
@@ -34,12 +67,64 @@
 }
 
 .text-primary {
-  color: #ff5656; /* ? */
+  /* color: #ff3434; */
+  color: var(--cream-white);
+  /* color: var(--cream-white); */
 }
 
 .border-primary {
-  border-color: #ff5656; /* ? */
+  border-color: var(--light-brown);
+  /* border-image: url("images/logo_gala_banniere.png") 10;
+  border-image-repeat: repeat-x;
+  border-bottom: 5px; */
 }
+
+li {
+  /* font-size: 14px; */
+  margin-left: 40px;
+  list-style-type: circle;
+}
+
+.info-box {
+  /* background-color: var(--brown); */
+  background-color: var(--boxes-background);
+  border-radius: 5px;
+}
+
+/* .info-box {
+  position: relative;
+  background-color: var(--boxes-background);
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.info-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background-image: url("https://via.placeholder.com/800x20");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.info-box::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background-image: url("https://via.placeholder.com/800x20");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+} */
 
 p {
   overflow: hidden;
@@ -53,6 +138,11 @@ p small {
 p small a.tweet {
   background-color: #3b88c3; /* ? */
 }
+
+a:active {
+  background-color: var(--boxes-background);
+}
+
 .mcq {
   position: relative;
   display: block;
@@ -64,7 +154,7 @@ p small a.tweet {
 }
 .quiz h3 {
   position: relative;
-  background-color: rgba(253, 76, 129, 0.9); /* Nombre rep correctes */
+  background-color: var(--brown); /* Nombre rep correctes */
   text-align: justify;
   font-weight: bold;
   font-family: sans-serif;
@@ -131,7 +221,8 @@ p small a.tweet {
   font-family: Garamond;
   color: white /*#f1f1f1*/; /* réponses et explication */
 }
-li input[type="radio"] {
+
+.ouptut li input[type="radio"] {
   border: 0;
   outline: 0;
   -webkit-appereance: none;
@@ -156,8 +247,7 @@ li input[type="radio"] {
 .buttonblur {
   /* Commencer le quiz */
   padding: 1rem 1rem;
-  border: 0px solid #ff3434;
-  background-color: rgba(253, 76, 129, 0.9);
+  background-color: var(--light-brown);
   text-align: center;
   text-transform: uppercase;
   color: #fff;
@@ -171,16 +261,15 @@ li input[type="radio"] {
   transition: all 0.2s linear;
 }
 .buttonblur:hover {
-  /* Bouton pressé */
   background-color: #fff;
-  color: #fd4c81;
+  color: var(--light-brown);
 }
 
 .button {
   /* Commencer le quiz */
   padding: 1rem 1rem;
   border: 0px solid #ff3434;
-  background-color: rgba(253, 76, 129, 0.9);
+  background-color: var(--light-brown);
   text-align: center;
   text-transform: uppercase;
   color: #fff;
@@ -195,14 +284,15 @@ li input[type="radio"] {
 .button:hover {
   /* Bouton pressé */
   background-color: #fff;
-  color: #fd4c81;
+  color: var(--light-brown);
 }
 
 .buttoninscri {
   /* Commencer le quiz */
   padding: 1rem 1rem;
   border: 0px solid #ff3434;
-  background-color: #fd4c81;
+  background-color: var(--brown);
+  /* background-color: var(--light-brown); */
   text-align: center;
   text-transform: uppercase;
   color: #fff;
@@ -217,7 +307,8 @@ li input[type="radio"] {
 .buttoninscri:hover {
   /* Bouton pressé */
   background-color: #fff;
-  color: #fd4c81; /*dc2626 ef4444*/
+  color: var(--brown);
+  /* color: var(--light-brown); */
 }
 .next {
   display: none;
@@ -247,6 +338,11 @@ li input[type="radio"] {
   display: none;
 }
 
+.navbar {
+  background-color: var(--light-brown);
+  /* background-color: var(--brown); */
+}
+
 .center {
   display: block;
   margin-left: auto;
@@ -254,125 +350,118 @@ li input[type="radio"] {
   width: 50%;
 }
 
-/* TIMELINE
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+h2 {
+  text-align: center;
+  color: #5a4a36;
+  margin-top: 20px;
+  font-size: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  padding-bottom: 10px;
+  border-bottom: 4px solid #c2a87d;
+}
 
-.timeline ul {
+h4 {
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px;
+  font-size: 30px;
+  color: white /*#D44141*/; /* Numéro question */
+  font-family: sans-serif;
+  margin-bottom: 10px;
+}
+
+/* PLANNING ANIMATION
+---------------------------------- */
+
+.planningcontainer {
+  width: 50%;
+  margin: 0 auto;
+  position: relative;
   padding: 50px 0;
 }
-/* ligne */
-.timeline ul li:nth-child(odd) {
-  list-style-type: none;
+
+.planningblock {
   position: relative;
-  width: 6px;
-  margin: 0 auto;
-  padding-top: 50px;
-  background: #044aaa; /* */
-}
-.timeline ul li:nth-child(even) {
-  list-style-type: none;
-  position: relative;
-  width: 6px;
-  margin: 0 auto;
-  padding-top: 50px;
-  background: #fd4c81;
-}
-/* boules */
-.timeline ul li::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  transform: translateX(-50%);
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background: #fff;
-  z-index: 1;
-}
-/* cadres */
-.timeline ul li div {
-  position: relative;
-  bottom: 0;
-  width: 400px;
-  padding: 15px;
-  border-radius: 20px;
-  background-color: rgba(4, 74, 170, 0.4);
-  border: 1px solid white;
+  width: 40%; /* Narrower width */
+  margin: 50px 0;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 2px solid #c2a87d;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  font-size: 1.2rem;
+  color: #5a4a36;
+  opacity: 0; /* Hidden initially */
 }
 
-.timeline ul li div::before {
-  content: "";
-  position: absolute;
-  bottom: 7px;
-  width: 0;
-  height: 0;
-  border-style: solid;
+.planningblock.left {
+  margin-right: auto;
+  animation: slideInLeft 0.8s ease-out forwards;
+  animation-play-state: paused;
 }
 
-.timeline ul li:nth-child(odd) div {
-  left: 45px;
+.planningblock.right {
+  margin-left: auto;
+  animation: slideInRight 0.8s ease-out forwards;
+  animation-play-state: paused;
 }
 
-.timeline ul li:nth-child(odd) div::before {
-  left: -11px;
-  border-width: 8px 16px 8px 0;
-  border-color: transparent rgba(4, 74, 170, 0) transparent transparent;
-} /* flèches droites */
-
-.timeline ul li:nth-child(even) div {
-  left: -439px;
-}
-
-.timeline ul li:nth-child(even) div::before {
-  right: -11px;
-  border-width: 8px 0 8px 16px;
-  border-color: transparent transparent transparent rgba(4, 74, 170, 0);
-} /* flèches gauches */
-
-time {
+/* Time element styling */
+.planningblock time {
   display: block;
-  font-size: 1.6rem;
+  font-size: 1rem;
   font-weight: bold;
-  margin-bottom: 8px;
-  /*text-decoration: underline;
-  text-decoration-color: #fd4c81;*/
-  border-bottom: 4px solid #fd4c81;
+  color: #5a4a36;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
   text-align: center;
+  border-bottom: 2px solid #c2a87d;
   width: 50%;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* EFFECTS
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-.timeline ul li::after {
-  transition: background 0.5s ease-in-out;
-}
-/* boules */
-.timeline ul li.in-view::after {
-  background: #fff;
+.planningblock .planningcontent {
+  font-size: 1.1rem;
+  text-align: center;
 }
 
-.timeline ul li div {
-  visibility: hidden;
-  opacity: 0;
-  transition: all 0.5s ease-in-out;
+/* Keyframe animations */
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
-.timeline ul li:nth-child(odd) div {
-  transform: translate3d(200px, 0, 0);
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
-.timeline ul li:nth-child(even) div {
-  transform: translate3d(-200px, 0, 0);
-}
-
-.timeline ul li.in-view div {
-  transform: none;
-  visibility: visible;
-  opacity: 1;
+/* Path line down the center */
+.planningcontainer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 100%;
+  background: linear-gradient(180deg, #c2a87d, #5a4a36);
+  border-radius: 5px;
 }
 
 /* GENERAL MEDIA QUERIES
@@ -423,64 +512,5 @@ time {
     left: -11px;
     border-width: 8px 16px 8px 0;
     border-color: transparent rgba(4, 74, 170, 0) transparent transparent;
-  }
-}
-
-/* EXTRA/CLIP PATH STYLES
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.timeline-clippy ul li::after {
-  width: 40px;
-  height: 40px;
-  border-radius: 0;
-}
-
-.timeline-rhombus ul li::after {
-  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-}
-
-.timeline-rhombus ul li div::before {
-  bottom: 12px;
-}
-
-.timeline-star ul li::after {
-  clip-path: polygon(
-    50% 0%,
-    61% 35%,
-    98% 35%,
-    68% 57%,
-    79% 91%,
-    50% 70%,
-    21% 91%,
-    32% 57%,
-    2% 35%,
-    39% 35%
-  );
-}
-
-.timeline-heptagon ul li::after {
-  clip-path: polygon(
-    50% 0%,
-    90% 20%,
-    100% 60%,
-    75% 100%,
-    25% 100%,
-    0% 60%,
-    10% 20%
-  );
-}
-
-.timeline-infinite ul li::after {
-  animation: scaleAnimation 2s infinite;
-}
-
-@keyframes scaleAnimation {
-  0% {
-    transform: translateX(-50%) scale(1);
-  }
-  50% {
-    transform: translateX(-50%) scale(1.25);
-  }
-  100% {
-    transform: translateX(-50%) scale(1);
   }
 }

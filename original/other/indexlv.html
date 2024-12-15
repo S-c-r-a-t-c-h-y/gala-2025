@@ -12,12 +12,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/daisyui/2.46.1/full.css"
     />
-    <link rel="stylesheet" href="./stylelvc.css" />
+    <link rel="stylesheet" href="./stylelv.css" />
   </head>
   <!-- Couleur du fond-->
   <body class="bground">
     <!-- 301c66 543787 background-color: #ffcccc ef4444; -->
     <!--<html data-theme="test"> https://pics.craiyon.com/2023-12-11/2rWFCfVQT0aj6GNY-qodIg.webp https://github.com/pierreschmittbuhl/Gala-2024/blob/main/images/logo%201%20compte%20insta.png?raw=true -->
+
     <div
       class="hero min-h-screen"
       style="
@@ -76,7 +77,6 @@
             <li><a onclick="scrollToInscription()">Inscriptions</a></li>
             <li><a onclick="scrollToMenu()">Menu</a></li>
             <li><a onclick="scrollToPlanning()">Planning</a></li>
-            <li><a onclick="scrollToPartenaire()">Partenaire</a></li>
             <li>
               <a
                 href="https://www.instagram.com/gala_ens_lyon_2024/"
@@ -108,6 +108,7 @@
               >Bienvenue</a
             >
           </li>
+
           <li>
             <a
               onclick="scrollToInscription()"
@@ -128,14 +129,6 @@
           </li>
           <li>
             <a
-              onclick="scrollToPartenaire()"
-              class="text-xl"
-              style="color: white"
-              >Partenaire</a
-            >
-          </li>
-          <li>
-            <a
               href="https://www.instagram.com/gala_ens_lyon_2024/"
               class="w-20 h-17"
               ><img
@@ -151,16 +144,17 @@
         <a onclick="scrollToInscription()" class="buttoninscri">S'inscrire</a>
       </div>
     </div>
+
     <div class="flex flex-col gap-16">
       <div id="bienvenue" class="w-screen p-2 flex flex-col items-center gap-4">
         <!--
-               <div class="w-full md:w-3/5 bg-red-600 rounded-2xl md:p-8 p-3">
-                 <h2 class="w-full md:w-1/2 mx-auto text-center text-4xl font-bold text-primary mb-4 border-b-4 pb-4 border-primary" style="color: #fed80b; border-color: #fed80b">Présentation
-                 </h2>
-                 <center><img width="80%" height="300" src="https://github.com/pierreschmittbuhl/Gala-2024/blob/main/images/affiche%20galandalousie%20(1).jpg?raw=true" title="Galapocalyspe"
-                   frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="arrondie"
-                              allowfullscreen></img></center>
-               </div> -->
+    <div class="w-full md:w-3/5 bg-red-600 rounded-2xl md:p-8 p-3">
+      <h2 class="w-full md:w-1/2 mx-auto text-center text-4xl font-bold text-primary mb-4 border-b-4 pb-4 border-primary" style="color: #fed80b; border-color: #fed80b">Présentation
+      </h2>
+      <center><img width="80%" height="300" src="https://github.com/pierreschmittbuhl/Gala-2024/blob/main/images/affiche%20galandalousie%20(1).jpg?raw=true" title="Galapocalyspe"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="arrondie"
+                   allowfullscreen></center>
+    </div> -->
         <!-- Paragraphe intro -->
         <div
           class="md:w-3/5 w-full rounded-2xl p-3 md:p-8"
@@ -178,6 +172,7 @@
             finale :Las Vegas ! Une soirée haute en couleur vous attend dans
             gymnase Descartes comme vous ne l'avez jamais vu !
             <br /><br />
+
             Votre dévoué comité gala vous donne rendez-vous pour une nuit de
             folie, rythmée par un programme (presque) aussi riche que n'importe
             quel casino : défilé sur tapis rouge, musique et performances de
@@ -192,6 +187,7 @@
           </p>
         </div>
       </div>
+
       <div
         id="inscription"
         class="w-screen p-2 flex flex-col items-center gap-4"
@@ -215,7 +211,9 @@
             Aucun remboursement ne sera effectué. Vous pouvez cependant
             céder/revendre votre billet. Dans ce cas, veuillez contacter le
             comité gala afin qu'on procède au changement de nom du billet.
+
             <br /><br />
+
             Avant de pouvoir prendre votre place, vous allez devoir répondre à
             ce questionnaire. Si vous prenez une place pour un·e tiers, vous
             vous portez garant·e que la personne aie connaissance de la charte
@@ -237,6 +235,7 @@
               </div>
               <div class="next button">Question suivante</div>
               <div class="unblur button">Révéler la question</div>
+
               <div class="w-full md:w-1/2 button lien">
                 Accéder à l'inscription
               </div>
@@ -244,6 +243,7 @@
           </div>
         </div>
       </div>
+
       <div id="menu" class="w-screen p-2 flex flex-col items-center">
         <!-- Menu -->
         <div
@@ -287,6 +287,7 @@
           </div>
         </div>
       </div>
+
       <div id="planning" class="w-screen p-2 flex flex-col items-center gap-4">
         <!-- Planning -->
         <div
@@ -300,6 +301,7 @@
             Planning du GALA
           </h2>
         </div>
+
         <div
           class="w-screen min-h-screen p-4 md:p-16 flex flex-col md:items-center items-start gap-4 text-white"
         >
@@ -338,70 +340,22 @@
           </section>
         </div>
       </div>
-      <div id="partenaire" class="w-screen p-2 flex flex-col items-center">
-        <!-- Partenaire -->
-        <div
-          class="w-full md:w-3/5 rounded-2xl p-8"
-          style="background-color: rgba(4, 74, 170, 0.4)"
-        >
-          <h2
-            class="w-full md:w-1/2 mx-auto text-center text-4xl font-bold text-primary mb-4 border-b-4 pb-4 border-primary"
-            style="color: #fff; border-color: #fd4c81"
-          >
-            Partenaire
-          </h2>
-          <p class="taille-texte text-justify" style="color: white">
-            Cette année, notre partenaire est
-            <b class="text-3xl" style="color: #efef75"
-              >Enigmatic Live Escape Game Lyon !</b
-            >
-            <br />
-            <center>
-              <a
-                href="https://www.enigmaticlyon.fr/?gclid=CjwKCAiAqY6tBhAtEiwAHeRopR_uweZmqEJcGf-bHPLXTH11tWs-NCYpjJ9T6Mz4aoDdzZCJRRbJiRoC0GUQAvD_BwE"
-              >
-                <img
-                  id="image_partenaire"
-                  width="60%"
-                  height="500"
-                  src="https://github.com/pierreschmittbuhl/Gala-2024/blob/main/images/ENIGMATIC-Live-Escape-Game-Logo-nom.png?raw=true"
-                  title="Partenaire"
-                  class="bordure-image espacement"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                />
-              </a>
-            </center>
-          </p>
-
-          <p class="taille-texte text-justify" style="color: white">
-            <br />
-            Pour chaque place achetée un bon d'achat vous sera délivré en main
-            propre le jour du Gala d'une valeur de 20€ utilisable chez Enigmatic
-            Live Escape Game Lyon. Le bon est utilisable en heures creuses
-            uniquement (du lundi au vendredi jusqu'à 16h15 inclus). Il ne peut
-            être utilisé en même temps que d'autres codes lors d'une même
-            réservation. Les bons seront valable jusqu'au 30/04/2024.
-          </p>
-        </div>
-      </div>
       <!--
-            <div id="contacts" class="w-screen p-2 flex flex-col items-center">
-            
-            <div class="w-full md:w-3/5 bg-red-500 rounded-2xl p-3 md:p-8">
-              <h2 class="w-full md:w-1/2 mx-auto text-center text-4xl font-bold text-primary mb-4 border-b-4 pb-4 border-primary" style="color: #fff; border-color: #fff">Instagram</h2>
-              <p class="text-lg text-justify">
-            
-            
-            <a href="https://www.instagram.com/gala_ens_lyon_2024/">
-            <center><img width="100%" height="300" src="https://github.com/pierreschmittbuhl/Gala-2024/blob/main/images/insta%20rose.png?raw=true" alt="Instagram" class="arrondie"
-                            ></center> </a></div>
-            
-            </div> -->
+    <div id="contacts" class="w-screen p-2 flex flex-col items-center">
+
+    <div class="w-full md:w-3/5 bg-red-500 rounded-2xl p-3 md:p-8">
+      <h2 class="w-full md:w-1/2 mx-auto text-center text-4xl font-bold text-primary mb-4 border-b-4 pb-4 border-primary" style="color: #fff; border-color: #fff">Instagram</h2>
+      <p class="text-lg text-justify">
+
+
+    <a href="https://www.instagram.com/gala_ens_lyon_2024/">
+    <center><img width="100%" height="300" src="https://github.com/pierreschmittbuhl/Gala-2024/blob/main/images/insta%20rose.png?raw=true" alt="Instagram" class="arrondie"
+                    ></center> </a></div>
+
+  </div> -->
     </div>
     <!-- partial -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <script src="./scriptlvc.js"></script>
+    <script src="./scriptlv.js"></script>
   </body>
 </html>

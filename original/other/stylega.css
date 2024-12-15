@@ -6,9 +6,9 @@
 }
 
 .bground {
-  background-image: url(https://github.com/pierreschmittbuhl/Gala-2024/blob/main/images/fond_lv_1.png?raw=true);
-  background-size: 200%;
-  /* linear-gradient(#fd4c81, 50%, #ef4444); */
+  background-image: url(https://github.com/pierreschmittbuhl/Gala-2024/blob/main/images/Design%20sans%20titre.png?raw=true);
+  background-size: 2500px;
+  /* linear-gradient(#f8d161, 50%, #ef4444); */
 }
 
 .espacement {
@@ -18,11 +18,6 @@
 .bordure-image {
   border: 3px solid white;
   border-radius: 15px;
-  opacity: 1;
-}
-
-.bordure-barre {
-  border-bottom: 3px solid white;
 }
 
 .arrondie {
@@ -64,7 +59,7 @@ p small a.tweet {
 }
 .quiz h3 {
   position: relative;
-  background-color: rgba(253, 76, 129, 0.9); /* Nombre rep correctes */
+  background-color: rgba(94, 154, 79, 0.5); /* Nombre rep correctes */
   text-align: justify;
   font-weight: bold;
   font-family: sans-serif;
@@ -107,23 +102,6 @@ p small a.tweet {
   border-radius: 15px;
   margin-bottom: 5px;
 }
-
-.output p0,
-.output p1,
-.output p2,
-.output p3,
-.output p4 {
-  /* font énoncé question et réponses */
-  filter: blur(4px);
-  padding: 10px;
-  line-height: 30px;
-  font-size: 24px;
-  /*rgba(0,0,0,0.6) dc2626*/
-  color: white;
-  border-radius: 15px;
-  margin-bottom: 5px;
-}
-
 .output li {
   display: inline-block;
   margin: 5px;
@@ -144,43 +122,15 @@ li input[type="radio"] {
 }
 
 .next,
-.unblur,
-.unblur0,
-.unblur1,
-.unblur2,
-.unblur3,
-.unblur4 {
+.unblur {
   display: inline-block;
-}
-
-.buttonblur {
-  /* Commencer le quiz */
-  padding: 1rem 1rem;
-  border: 0px solid #ff3434;
-  background-color: rgba(253, 76, 129, 0.9);
-  text-align: center;
-  text-transform: uppercase;
-  color: #fff;
-  font-family: sans-serif;
-  font-weight: bold;
-  font-size: 12px;
-  border-radius: 15px;
-  cursor: pointer;
-  -webkit-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
-  transition: all 0.2s linear;
-}
-.buttonblur:hover {
-  /* Bouton pressé */
-  background-color: #fff;
-  color: #fd4c81;
 }
 
 .button {
   /* Commencer le quiz */
   padding: 1rem 1rem;
   border: 0px solid #ff3434;
-  background-color: rgba(253, 76, 129, 0.9);
+  background-color: rgba(94, 154, 79, 0.5);
   text-align: center;
   text-transform: uppercase;
   color: #fff;
@@ -195,14 +145,14 @@ li input[type="radio"] {
 .button:hover {
   /* Bouton pressé */
   background-color: #fff;
-  color: #fd4c81;
+  color: rgba(94, 154, 79, 1);
 }
 
 .buttoninscri {
   /* Commencer le quiz */
   padding: 1rem 1rem;
   border: 0px solid #ff3434;
-  background-color: #fd4c81;
+  background-color: rgba(126, 214, 105, 1);
   text-align: center;
   text-transform: uppercase;
   color: #fff;
@@ -217,7 +167,7 @@ li input[type="radio"] {
 .buttoninscri:hover {
   /* Bouton pressé */
   background-color: #fff;
-  color: #fd4c81; /*dc2626 ef4444*/
+  color: rgba(126, 214, 105, 1); /*dc2626 ef4444*/
 }
 .next {
   display: none;
@@ -233,12 +183,7 @@ li input[type="radio"] {
 .success {
   background-color: #36de66;
 }
-.unblur,
-.unblur0,
-.unblur1,
-.unblur2,
-.unblur3,
-.unblur4 {
+.unblur {
   display: none;
 }
 
@@ -267,7 +212,7 @@ li input[type="radio"] {
   width: 6px;
   margin: 0 auto;
   padding-top: 50px;
-  background: #044aaa; /* */
+  background: rgba(84, 137, 70, 1);
 }
 .timeline ul li:nth-child(even) {
   list-style-type: none;
@@ -275,7 +220,7 @@ li input[type="radio"] {
   width: 6px;
   margin: 0 auto;
   padding-top: 50px;
-  background: #fd4c81;
+  background: rgba(126, 214, 105, 1);
 }
 /* boules */
 .timeline ul li::after {
@@ -297,8 +242,7 @@ li input[type="radio"] {
   width: 400px;
   padding: 15px;
   border-radius: 20px;
-  background-color: rgba(4, 74, 170, 0.4);
-  border: 1px solid white;
+  background: rgba(126, 214, 105, 1);
 }
 
 .timeline ul li div::before {
@@ -317,7 +261,7 @@ li input[type="radio"] {
 .timeline ul li:nth-child(odd) div::before {
   left: -11px;
   border-width: 8px 16px 8px 0;
-  border-color: transparent rgba(4, 74, 170, 0) transparent transparent;
+  border-color: transparent rgba(126, 214, 105, 1) transparent transparent;
 } /* flèches droites */
 
 .timeline ul li:nth-child(even) div {
@@ -327,7 +271,7 @@ li input[type="radio"] {
 .timeline ul li:nth-child(even) div::before {
   right: -11px;
   border-width: 8px 0 8px 16px;
-  border-color: transparent transparent transparent rgba(4, 74, 170, 0);
+  border-color: transparent transparent transparent rgba(126, 214, 105, 1);
 } /* flèches gauches */
 
 time {
@@ -335,13 +279,6 @@ time {
   font-size: 1.6rem;
   font-weight: bold;
   margin-bottom: 8px;
-  /*text-decoration: underline;
-  text-decoration-color: #fd4c81;*/
-  border-bottom: 4px solid #fd4c81;
-  text-align: center;
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 /* EFFECTS
@@ -383,7 +320,7 @@ time {
     width: 250px;
   }
   .timeline ul li:nth-child(even) div {
-    left: 45px; /* -289 */
+    left: 45px;
     /*250+45-6*/
   }
   .taille-texte {
@@ -401,7 +338,7 @@ time {
   .timeline ul li:nth-child(even) div::before {
     left: -11px;
     border-width: 8px 16px 8px 0;
-    border-color: transparent rgba(4, 74, 170, 0) transparent transparent;
+    border-color: transparent rgba(126, 214, 105, 1) transparent transparent;
   }
   .imagemenu {
     margin: 30px -50px 0px -50px;
@@ -422,11 +359,11 @@ time {
   .timeline ul li:nth-child(even) div::before {
     left: -11px;
     border-width: 8px 16px 8px 0;
-    border-color: transparent rgba(4, 74, 170, 0) transparent transparent;
+    border-color: transparent rgba(126, 214, 105, 1) transparent transparent;
   }
 }
 
-/* EXTRA/CLIP PATH STYLES
+/* EXTRA CLIP PATH STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .timeline-clippy ul li::after {
   width: 40px;

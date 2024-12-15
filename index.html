@@ -2,100 +2,29 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <title>Gal'Antique</title>
+    <title>GalAntique</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
-    />
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/daisyui/2.46.1/full.css"
-    />
-    <link rel="stylesheet" href="./stylelvc.css" />
+      href="https://cdnjs.cloudflare.com/ajax/libs/daisyui/2.46.1/full.css" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <!-- Couleur du fond-->
   <body class="bground">
-    <!-- 301c66 543787 background-color: #ffcccc ef4444; -->
-    <!--<html data-theme="test"> https://pics.craiyon.com/2023-12-11/2rWFCfVQT0aj6GNY-qodIg.webp https://github.com/pierreschmittbuhl/Gala-2024/blob/main/images/logo%201%20compte%20insta.png?raw=true -->
     <div
       class="hero min-h-screen"
-      style="
-        background-image: url(https://github.com/pierreschmittbuhl/Gala-2024/blob/main/images/Bandeau%20fond.png?raw=true);
-      "
-    >
-      <div class="hero-overlay bg-opacity-60"></div>
-      <div class="hero-content text-center text-neutral-content">
-        <div class="max-w-5">
-          <center>
-            <img
-              src="https://github.com/pierreschmittbuhl/Gala-2024/blob/main/images/Bandeau.png?raw=true"
-            />
-          </center>
-          <h1 class="mb-5 text-8xl font-black espacement">
-            Gala de l'ENS 2025
-          </h1>
-          <p class="mb-5 text-xl">
-            Rejoignez-nous pour une soirée de folie le vendredi 17 janvier
-          </p>
-          <button onclick="scrollToBienvenue()" class="buttoninscri">
-            En savoir plus
-          </button>
-        </div>
-      </div>
-    </div>
+      style="background-image: url(./images/bandeaux.png)"></div>
     <!-- barre de navigation -->
-    <div
-      class="navbar sticky top-0 z-50 bordure-barre"
-      id="navbar"
-      style="background: linear-gradient(to right, #fd4c81, 50%, #044aaa)"
-    >
-      <div class="navbar-start">
-        <div class="dropdown">
-          <label tabindex="0" class="btn btn-ghost lg:hidden">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h8m-8 6h16"
-              />
-            </svg>
-          </label>
-          <ul
-            tabindex="0"
-            class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-32"
-          >
-            <li><a onclick="scrollToBienvenue()">Bienvenue</a></li>
-            <li><a onclick="scrollToInscription()">Inscriptions</a></li>
-            <li><a onclick="scrollToMenu()">Menu</a></li>
-            <li><a onclick="scrollToPlanning()">Planning</a></li>
-            <li><a onclick="scrollToPartenaire()">Partenaire</a></li>
-            <li>
-              <a
-                href="https://www.instagram.com/gala_ens_lyon_2024/"
-                class="w-20 h-17"
-                ><img
-                  src="https://github.com/pierreschmittbuhl/Gala-2024/blob/main/images/Instagram_icon.png?raw=true"
-                  alt="Logo"
-                  class="w-full h-full"
-                />
-              </a>
-            </li>
-          </ul>
-        </div>
+    <div class="navbar sticky top-0 z-50 bordure-barre" id="navbar">
+      <div class="navbar-start" style="margin-left: 5px">
         <a class="h-16"
           ><img
-            src="https://github.com/pierreschmittbuhl/Gala-2024/blob/main/images/Bandeau.png?raw=true"
+            src="images/logo_gala_banniere_sans_bg_avec_bordure.png"
             alt="Logo"
-            class="w-full h-full"
-          />
+            class="w-full h-full" />
         </a>
       </div>
       <div class="navbar-center hidden lg:flex">
@@ -136,13 +65,12 @@
           </li>
           <li>
             <a
-              href="https://www.instagram.com/gala_ens_lyon_2024/"
+              href="https://www.instagram.com/gala_ensl_2025/"
               class="w-20 h-17"
               ><img
                 src="https://github.com/pierreschmittbuhl/Gala-2024/blob/main/images/logo%20insta%20blanc%20png.png?raw=true"
                 alt="Logo"
-                class="w-full h-full"
-              />
+                class="w-full h-full" />
             </a>
           </li>
         </ul>
@@ -151,6 +79,7 @@
         <a onclick="scrollToInscription()" class="buttoninscri">S'inscrire</a>
       </div>
     </div>
+
     <div class="flex flex-col gap-16">
       <div id="bienvenue" class="w-screen p-2 flex flex-col items-center gap-4">
         <!--
@@ -162,59 +91,71 @@
                               allowfullscreen></img></center>
                </div> -->
         <!-- Paragraphe intro -->
-        <div
-          class="md:w-3/5 w-full rounded-2xl p-3 md:p-8"
-          style="background-color: rgba(4, 74, 170, 0.4)"
-        >
+        <div class="md:w-3/5 w-full p-3 md:p-8 info-box">
           <h2
-            class="w-full md:w-1/2 mx-auto text-center text-4xl font-bold text-primary mb-4 border-b-4 pb-4 border-primary"
-            style="color: white; border-color: #fd4c81"
-          >
-            Le Ga'Las Vegas !
+            class="w-full md:w-1/2 mx-auto text-center text-4xl font-bold text-primary mb-4 pb-4 border-primary">
+            Le GalAntique !
           </h2>
           <p class="taille-texte text-justify" style="color: white">
-            Le 19 janvier 2024 à 20h, à l'heure ou le soleil laisse place aux
-            spots et aux tapis rouges, venez rejoindre votre BR à sa destination
-            finale :Las Vegas ! Une soirée haute en couleur vous attend dans
-            gymnase Descartes comme vous ne l'avez jamais vu !
-            <br /><br />
-            Votre dévoué comité gala vous donne rendez-vous pour une nuit de
-            folie, rythmée par un programme (presque) aussi riche que n'importe
-            quel casino : défilé sur tapis rouge, musique et performances de
-            haut vol, mais aussi (parce qu'on peut toujours trouver du réconfort
-            quelque part) des réjouissances gustatives pour assouvir petits et
-            grands appétits !
+            Plongez dans l'univers fascinant de la Grèce et de la Rome antiques
+            lors du Galantique, un événement exceptionnel qui aura lieu le 17
+            janvier 2025, de 20h à 5h, au Gymnase Descartes.
             <br />
             <br />
-            Venez nombreux.se.s et n'hésitez pas à venir accompagné.e.s de
-            convives extérieur.e.s pour cette soirée qui promet d'être mémorable
-            !
+            Laissez-vous transporter à travers le temps et découvrez un
+            programme unique:
+            <br />
+            ✨ Concerts envoûtants pour célébrer la musique d'hier et
+            d'aujourd'hui.
+            <br />
+            👗 Defilés somptueux mettant en valeur des tenues inspirées de dieux
+            et héros antiques.
+            <br />
+            ⚔ Combats de gladiateurs spectaculaires, pour vivre l'émotion des
+            arènes.
+            <br />
+            🍇 Buffet d'exception, avec des mets inspirés de banquets de
+            l'époque.
+            <!-- <br />
+            <br />
+            Rejoignez-nous pour une soirée inoubliable où histoire, art et
+            gastronomie s'entremêlent dans un décor majestueux. Préparez-vous à
+            revivre la grandeur de l'Antiquité ! -->
+            <br />
+            <br />
+            Réservez votre place dès maintenant pour un moment hors du temps !
           </p>
         </div>
       </div>
       <div
         id="inscription"
-        class="w-screen p-2 flex flex-col items-center gap-4"
-      >
+        class="w-screen p-2 flex flex-col items-center gap-4">
         <!-- Inscriptions  bg-red-500  -->
-        <div
-          class="w-full md:w-3/5 rounded-2xl md:p-8 p-3"
-          style="background-color: rgba(4, 74, 170, 0.4)"
-        >
+        <div class="w-full md:w-3/5 md:p-8 p-3 info-box">
           <h2
-            class="w-full md:w-1/2 mx-auto text-center text-4xl font-bold text-primary mb-4 border-b-4 pb-4 border-primary"
-            style="color: #fff; border-color: #fd4c81"
-          >
+            class="w-full md:w-1/2 mx-auto text-center text-4xl font-bold text-primary mb-4 pb-4 border-primary">
             Inscriptions
           </h2>
-          <p class="taille-texte text-justify" style="color: white">
-            Voici l'interface permettant d'obtenir ses places pour le GALA, nous
-            rappelons que les personnes extérieures à l'ENS sont acceptées dans
-            la limite d'une personne extérieure par étudiant·e de l'ENS. Les
-            billets sont nominatifs et un contrôle d'identité sera effectué.
-            Aucun remboursement ne sera effectué. Vous pouvez cependant
-            céder/revendre votre billet. Dans ce cas, veuillez contacter le
-            comité gala afin qu'on procède au changement de nom du billet.
+          <div class="taille-texte text-justify" style="color: white">
+            Voici l'interface permettant d'obtenir ses places pour le GALA.
+            <br />
+            Quelques rappels importants :
+            <ul>
+              <li>
+                les personnes extérieures à l'ENS sont acceptées et doivent
+                impérativement avoir un·e garant·e étudiant à l'ENS
+              </li>
+              <li>
+                les billets sont nomiatifs et un contrôle d'identité sera
+                effectué
+              </li>
+              <li>
+                aucun remboursement ne sera effectué (vous pouvez cependant
+                céder/revendre votre billet, dans ce cas veuillez contacter le
+                comité gala afin qu'on procède au changement de nom du billet)
+              </li>
+            </ul>
+
             <br /><br />
             Avant de pouvoir prendre votre place, vous allez devoir répondre à
             ce questionnaire. Si vous prenez une place pour un·e tiers, vous
@@ -224,12 +165,8 @@
             question pour cause de TW, passez simplement à la question suivante.
             Nous comptons sur votre bonne foi pour répondre au mieux et assurer
             une soirée qui se déroulera dans les meilleures conditions.
-          </p>
-          <div
-            id="test"
-            class="mcq w-full border-t-4 border-primary mt-8"
-            style="border-color: #fd4c81"
-          >
+          </div>
+          <div id="test" class="mcq w-full border-t-4 border-primary mt-8">
             <div class="quiz"></div>
             <div class="flex justify-center gap-2">
               <div id="start" class="w-full md:w-1/2 button start">
@@ -237,23 +174,24 @@
               </div>
               <div class="next button">Question suivante</div>
               <div class="unblur button">Révéler la question</div>
-              <div class="w-full md:w-1/2 button lien">
+              <!-- <div class="w-full md:w-1/2 button lien">
                 Accéder à l'inscription
-              </div>
+              </div> -->
+              <iframe
+                class="lien"
+                id="haWidget"
+                allowtransparency="true"
+                src="https://www.helloasso.com/associations/bde-ensl/evenements/gala-2025/widget-vignette"
+                style="width: 350px; height: 450px; border: none"></iframe>
             </div>
           </div>
         </div>
       </div>
       <div id="menu" class="w-screen p-2 flex flex-col items-center">
         <!-- Menu -->
-        <div
-          class="w-full md:w-3/5 rounded-2xl p-8"
-          style="background-color: rgba(4, 74, 170, 0.4)"
-        >
+        <div class="w-full md:w-3/5 p-8 info-box">
           <h2
-            class="w-full md:w-1/2 mx-auto text-center text-4xl font-bold text-primary mb-4 border-b-4 pb-4 border-primary"
-            style="color: #fff; border-color: #fd4c81"
-          >
+            class="w-full md:w-1/2 mx-auto text-center text-4xl font-bold text-primary mb-4 pb-4 border-primary">
             Menu du Gala
           </h2>
           <p class="taille-texte text-justify" style="color: white">
@@ -262,12 +200,8 @@
             <br />
           </p>
 
-          <div
-            id="affmenu"
-            class="mcq w-full border-t-4 border-primary mt-8"
-            style="border-color: #fd4c81"
-          >
-            <div class="menuim"></div>
+          <div id="affmenu" class="mcq w-full border-t-4 border-primary mt-8">
+            <!-- <div class="menuim"></div>
             <div class="flex justify-center gap-2">
               <div id="startmenu" class="w-full md:w-1/2 button startmenu">
                 Afficher le menu
@@ -281,85 +215,79 @@
                 class="bordure-image espacement imagemenu"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              />
-            </div>
+                allowfullscreen />
+            </div> -->
+            <p class="taille-texte text-justify" style="color: white">
+              Le menu sera bientôt disponible, encore un peu de patience !
+              <br />
+            </p>
           </div>
         </div>
       </div>
+
       <div id="planning" class="w-screen p-2 flex flex-col items-center gap-4">
         <!-- Planning -->
-        <div
-          class="w-full md:w-3/5 rounded-2xl p-8"
-          style="background-color: rgba(4, 74, 170, 0.4)"
-        >
-          <h2
-            class="w-full md:w-1/2 mx-auto text-center text-4xl font-bold text-primary mb-4 border-b-4 pb-4 border-primary"
-            style="color: #fff; border-color: #fd4c81"
-          >
-            Planning du GALA
-          </h2>
-        </div>
-        <div
-          class="w-screen min-h-screen p-4 md:p-16 flex flex-col md:items-center items-start gap-4 text-white"
-        >
-          <section class="timeline text-2xl text-justify color: white">
-            <ul>
-              <li>
-                <div><time>20h00</time> Ouverture !</div>
-              </li>
-              <li>
-                <div><time>20h30</time> Fanfare !</div>
-              </li>
-              <li>
-                <div><time>21h15</time> Discours !</div>
-              </li>
-              <li>
-                <div><time>21h25</time> Défilé !</div>
-              </li>
-              <li>
-                <div>
-                  <time>22h00</time> Shows (Pompom, Bouli, Rock et happenings de
-                  folie...) !
-                </div>
-              </li>
-              <li>
-                <div><time>22h45</time> Groupes de musique !</div>
-              </li>
-              <li>
-                <div><time>00h30</time> Sets de DJs !</div>
-              </li>
-              <li>
-                <div>
-                  <time>05h00</time> Fin du GALA <br />(à l'année prochaine !!)
-                </div>
-              </li>
-            </ul>
-          </section>
+
+        <h2>Planning</h2>
+        <div class="planningcontainer">
+          <div class="planningblock left">
+            <time>20h00</time>
+            <div class="planningcontent">Ouverture</div>
+          </div>
+          <div class="planningblock right">
+            <time>20h30</time>
+            <div class="planningcontent">Fanfare</div>
+          </div>
+          <div class="planningblock left">
+            <time>21h00</time>
+            <div class="planningcontent">Discours</div>
+          </div>
+          <div class="planningblock right">
+            <time>21h15</time>
+            <div class="planningcontent">Défilé</div>
+          </div>
+          <div class="planningblock left">
+            <time>21h30</time>
+            <div class="planningcontent">Comédie musicale</div>
+          </div>
+          <div class="planningblock right">
+            <time>21h40</time>
+            <div class="planningcontent">
+              Shows (pompoms, bouli, rock 4 temps et autre)
+            </div>
+          </div>
+          <div class="planningblock left">
+            <time>22h30</time>
+            <div class="planningcontent">Concert</div>
+          </div>
+          <div class="planningblock right">
+            <time>00h00</time>
+            <div class="planningcontent">Sets de DJs</div>
+          </div>
+          <div class="planningblock left">
+            <time>04h00</time>
+            <div class="planningcontent">Fin de la musique</div>
+          </div>
+          <div class="planningblock right">
+            <time>05h00</time>
+            <div class="planningcontent">Fin de la soirée</div>
+          </div>
         </div>
       </div>
       <div id="partenaire" class="w-screen p-2 flex flex-col items-center">
         <!-- Partenaire -->
-        <div
-          class="w-full md:w-3/5 rounded-2xl p-8"
-          style="background-color: rgba(4, 74, 170, 0.4)"
-        >
+        <div class="w-full md:w-3/5 p-8 info-box">
           <h2
-            class="w-full md:w-1/2 mx-auto text-center text-4xl font-bold text-primary mb-4 border-b-4 pb-4 border-primary"
-            style="color: #fff; border-color: #fd4c81"
-          >
-            Partenaire
+            class="w-full md:w-1/2 mx-auto text-center text-4xl font-bold text-primary mb-4 pb-4 border-primary">
+            Partenaires
           </h2>
           <p class="taille-texte text-justify" style="color: white">
-            Cette année, notre partenaire est
-            <b class="text-3xl" style="color: #efef75"
-              >Enigmatic Live Escape Game Lyon !</b
-            >
+            La liste de nos partenaires sera disponible prochainement, restez à
+            l'affut !
             <br />
-            <center>
+            <!-- <center>
               <a
-                href="https://www.enigmaticlyon.fr/?gclid=CjwKCAiAqY6tBhAtEiwAHeRopR_uweZmqEJcGf-bHPLXTH11tWs-NCYpjJ9T6Mz4aoDdzZCJRRbJiRoC0GUQAvD_BwE"
-              >
+                href="https://www.enigmaticlyon.fr/?gclid=CjwKCAiAqY6tBhAtEiwAHeRopR_uweZmqEJcGf-bHPLXTH11tWs-NCYpjJ9T6Mz4aoDdzZCJRRbJiRoC0GUQAvD_BwE">
                 <img
                   id="image_partenaire"
                   width="60%"
@@ -369,13 +297,12 @@
                   class="bordure-image espacement"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                />
+                  allowfullscreen />
               </a>
-            </center>
+            </center> -->
           </p>
 
-          <p class="taille-texte text-justify" style="color: white">
+          <!-- <p class="taille-texte text-justify" style="color: white">
             <br />
             Pour chaque place achetée un bon d'achat vous sera délivré en main
             propre le jour du Gala d'une valeur de 20€ utilisable chez Enigmatic
@@ -383,25 +310,12 @@
             uniquement (du lundi au vendredi jusqu'à 16h15 inclus). Il ne peut
             être utilisé en même temps que d'autres codes lors d'une même
             réservation. Les bons seront valable jusqu'au 30/04/2024.
-          </p>
+          </p> -->
         </div>
       </div>
-      <!--
-            <div id="contacts" class="w-screen p-2 flex flex-col items-center">
-            
-            <div class="w-full md:w-3/5 bg-red-500 rounded-2xl p-3 md:p-8">
-              <h2 class="w-full md:w-1/2 mx-auto text-center text-4xl font-bold text-primary mb-4 border-b-4 pb-4 border-primary" style="color: #fff; border-color: #fff">Instagram</h2>
-              <p class="text-lg text-justify">
-            
-            
-            <a href="https://www.instagram.com/gala_ens_lyon_2024/">
-            <center><img width="100%" height="300" src="https://github.com/pierreschmittbuhl/Gala-2024/blob/main/images/insta%20rose.png?raw=true" alt="Instagram" class="arrondie"
-                            ></center> </a></div>
-            
-            </div> -->
     </div>
     <!-- partial -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <script src="./scriptlvc.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
