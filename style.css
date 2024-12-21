@@ -19,6 +19,32 @@
     url("https://github.com/S-c-r-a-t-c-h-y/gala-2025/blob/main/images/side_motive_right.png?raw=true");
   background-position: left, right;
   background-repeat: repeat-y, repeat-y;
+  background-size: 10vw;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.hero {
+  @media (min-aspect-ratio: 1/4) {
+    --h: calc(100vw * 777 / 1556);
+    height: var(--h);
+    aspect-ratio: 1556 / 777;
+    margin-left: calc(0.5 * (100vw - var(--h) * 1556 / 777));
+    width: auto;
+  }
+  @media (min-aspect-ratio: 1000/700) {
+    --h: 100vh;
+  }
+  @media (min-aspect-ratio: 1556/777) {
+    --h: 100vh;
+    width: 100%;
+    aspect-ratio: initial;
+    margin-left: 0;
+  }
+
+  max-width: initial;
 }
 
 .espacement {
@@ -26,7 +52,8 @@
 }
 
 .bordure-image {
-  border: 3px solid white;
+  padding: 10px;
+  border: 3px solid var(--cream-white);
   border-radius: 15px;
   opacity: 1;
 }
@@ -292,7 +319,7 @@ h2 {
   font-size: 2.5rem;
   margin-left: auto;
   margin-right: auto;
-  width: 30%;
+  width: 30vw;
   padding-bottom: 10px;
   border-bottom: 4px solid #c2a87d;
 }
@@ -323,7 +350,7 @@ h4 {
   margin: 50px 0;
   padding: 20px;
   background: rgba(255, 255, 255, 0.9);
-  border: 2px solid #c2a87d;
+  border: 2px solid var(--light-brown);
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   font-size: 1.2rem;
@@ -352,7 +379,7 @@ h4 {
   margin-bottom: 10px;
   padding-bottom: 10px;
   text-align: center;
-  border-bottom: 2px solid #c2a87d;
+  border-bottom: 2px solid var(--light-brown);
   width: 50%;
   margin-left: auto;
   margin-right: auto;
@@ -361,6 +388,52 @@ h4 {
 .planningblock .planningcontent {
   font-size: 1.1rem;
   text-align: center;
+}
+
+/* Path line down the center */
+.planningcontainer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 100%;
+  background: linear-gradient(180deg, #c2a87d, #5a4a36);
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  .planningcontainer {
+    width: 80%;
+    padding: 50px 0;
+  }
+
+  .planningblock {
+    width: 75%;
+    margin: 50px 0 0 55px;
+    padding: 20px;
+    font-size: 1.2rem;
+    opacity: 0; /* Hidden initially */
+  }
+
+  .planningblock.left {
+    margin-right: auto;
+    animation: slideInLeft 0.8s ease-out forwards;
+    animation-play-state: paused;
+  }
+
+  .planningblock.right {
+    margin-right: auto;
+    animation: slideInRight 0.8s ease-out forwards;
+    animation-play-state: paused;
+  }
+
+  /* Path line down the center */
+  .planningcontainer::after {
+    left: 10px;
+    transform: none;
+  }
 }
 
 /* Keyframe animations */
@@ -386,30 +459,10 @@ h4 {
   }
 }
 
-/* Path line down the center */
-.planningcontainer::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 10px;
-  height: 100%;
-  background: linear-gradient(180deg, #c2a87d, #5a4a36);
-  border-radius: 5px;
-}
-
 /* GENERAL MEDIA QUERIES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 @media screen and (max-width: 900px) {
-  .timeline ul li div {
-    width: 250px;
-  }
-  .timeline ul li:nth-child(even) div {
-    left: 45px; /* -289 */
-    /*250+45-6*/
-  }
   .taille-texte {
     font-size: 16px;
   }
@@ -422,30 +475,14 @@ h4 {
   .output li {
     font-size: 16px;
   }
-  .timeline ul li:nth-child(even) div::before {
-    left: -11px;
-    border-width: 8px 16px 8px 0;
-    border-color: transparent rgba(4, 74, 170, 0) transparent transparent;
-  }
   .imagemenu {
     margin: 30px -50px 0px -50px;
     width: 100% content-box;
   }
 }
 
-@media screen and (max-width: 600px) {
-  .timeline ul li {
-    margin-left: 20px;
+/* @media screen and (max-width: 600px) {
+  .bground {
+    background-image: none;
   }
-  .timeline ul li div {
-    width: calc(100vw - 91px);
-  }
-  .timeline ul li:nth-child(even) div {
-    left: 45px;
-  }
-  .timeline ul li:nth-child(even) div::before {
-    left: -11px;
-    border-width: 8px 16px 8px 0;
-    border-color: transparent rgba(4, 74, 170, 0) transparent transparent;
-  }
-}
+} */

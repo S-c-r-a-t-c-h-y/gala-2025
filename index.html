@@ -14,11 +14,10 @@
   </head>
   <!-- Couleur du fond-->
   <body class="bground">
-    <div
-      class="hero min-h-screen"
-      style="
-        background-image: url(https://github.com/S-c-r-a-t-c-h-y/gala-2025/blob/main/images/bandeaux.png?raw=true);
-      "></div>
+    <img
+      class="hero"
+      src="https://github.com/S-c-r-a-t-c-h-y/gala-2025/blob/main/images/bandeaux.png?raw=true" />
+
     <!-- barre de navigation -->
     <div class="navbar sticky top-0 z-50 bordure-barre" id="navbar">
       <div class="navbar-start" style="margin-left: 5px">
@@ -26,7 +25,7 @@
           ><img
             src="https://github.com/S-c-r-a-t-c-h-y/gala-2025/blob/main/images/logo_gala_banniere_sans_bg_avec_bordure.png?raw=true"
             alt="Logo"
-            class="w-full h-full" />
+            class="h-full" />
         </a>
       </div>
       <div class="navbar-center hidden lg:flex">
@@ -62,7 +61,7 @@
               onclick="scrollToPartenaire()"
               class="text-xl"
               style="color: white"
-              >Partenaire</a
+              >Partenaires</a
             >
           </li>
           <li>
@@ -84,14 +83,6 @@
 
     <div class="flex flex-col gap-16">
       <div id="bienvenue" class="w-screen p-2 flex flex-col items-center gap-4">
-        <!--
-               <div class="w-full md:w-3/5 bg-red-600 rounded-2xl md:p-8 p-3">
-                 <h2 class="w-full md:w-1/2 mx-auto text-center text-4xl font-bold text-primary mb-4 border-b-4 pb-4 border-primary" style="color: #fed80b; border-color: #fed80b">Présentation
-                 </h2>
-                 <center><img width="80%" height="300" src="https://github.com/pierreschmittbuhl/Gala-2024/blob/main/images/affiche%20galandalousie%20(1).jpg?raw=true" title="Galapocalyspe"
-                   frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="arrondie"
-                              allowfullscreen></img></center>
-               </div> -->
         <!-- Paragraphe intro -->
         <div class="md:w-3/5 w-full p-3 md:p-8 info-box">
           <h2
@@ -230,23 +221,22 @@
       <div id="planning" class="w-screen p-2 flex flex-col items-center gap-4">
         <!-- Planning -->
 
-        <h2>Planning</h2>
-        <p class="taille-texte text-justify" style="color: black">
-          Le planning de la soirée sera bientôt disponible, encore un peu de
-          patience !
-          <br />
-          <!-- <div class="planningcontainer">
+        <h2 class="w-full mx-auto text-center text-4xl" style="width: 50vw">
+          Planning
+        </h2>
+
+        <!-- <div class="planningcontainer">
           <div class="planningblock left">
             <time>20h00</time>
             <div class="planningcontent">Ouverture</div>
           </div>
           <div class="planningblock right">
-            <time>20h30</time>
+            <time>20h15</time>
             <div class="planningcontent">Fanfare</div>
           </div>
           <div class="planningblock left">
-            <time>21h00</time>
-            <div class="planningcontent">Discours</div>
+            <time>20h40</time>
+            <div class="planningcontent">Rock 4 temps et Bouli danse</div>
           </div>
           <div class="planningblock right">
             <time>21h15</time>
@@ -279,7 +269,6 @@
             <div class="planningcontent">Fin de la soirée</div>
           </div>
         </div> -->
-        </p>
       </div>
 
       <div id="partenaire" class="w-screen p-2 flex flex-col items-center">
@@ -289,26 +278,34 @@
             class="w-full md:w-1/2 mx-auto text-center text-4xl font-bold text-primary mb-4 pb-4 border-primary">
             Partenaires
           </h2>
-          <p class="taille-texte text-justify" style="color: white">
-            La liste de nos partenaires sera disponible prochainement, restez à
-            l'affut !
-            <br />
-            <!-- <center>
-              <a
-                href="https://www.enigmaticlyon.fr/?gclid=CjwKCAiAqY6tBhAtEiwAHeRopR_uweZmqEJcGf-bHPLXTH11tWs-NCYpjJ9T6Mz4aoDdzZCJRRbJiRoC0GUQAvD_BwE">
-                <img
-                  id="image_partenaire"
-                  width="60%"
-                  height="500"
-                  src="https://github.com/pierreschmittbuhl/Gala-2024/blob/main/images/ENIGMATIC-Live-Escape-Game-Logo-nom.png?raw=true"
-                  title="Partenaire"
-                  class="bordure-image espacement"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen />
-              </a>
-            </center> -->
-          </p>
+
+          <center>
+            <a href="https://www.mage.fr/">
+              <img
+                id="image_partenaire_mage"
+                width="60%"
+                height="500"
+                src="https://www.mage.fr/wp-content/themes/mage/inc/assets/img/logo-mage.png"
+                title="Partenaire MAGE"
+                class="bordure-image espacement"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen />
+            </a>
+           
+            <a href="https://www.redbull.com/fr-fr">
+              <img
+                id="image_partenaire_mage"
+                width="60%"
+                height="500"
+                src="https://logo-marque.com/wp-content/uploads/2020/11/Red-Bull-Logo.png"
+                title="Partenaire MAGE"
+                class="bordure-image espacement"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen />
+            </a>
+          </center>
 
           <!-- <p class="taille-texte text-justify" style="color: white">
             <br />
@@ -318,8 +315,8 @@
             uniquement (du lundi au vendredi jusqu'à 16h15 inclus). Il ne peut
             être utilisé en même temps que d'autres codes lors d'une même
             réservation. Les bons seront valable jusqu'au 30/04/2024.
-          </p> -->
-        </div>
+          </p>
+        </div> -->
       </div>
     </div>
     <!-- partial -->
